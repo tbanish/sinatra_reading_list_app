@@ -3,5 +3,5 @@ Sprint 1.
 - [x] create books table
 - [x] create user model with associations
 - [x] create book model with associations
-- [ ] create seed file with dummy data
-- [ ] seed data and play with models
+- [x] create seed file with dummy data
+- [x] seed data and play with models
