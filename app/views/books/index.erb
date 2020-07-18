@@ -1,7 +1,7 @@
 <h1>Reading List</h1>
 
 <ol>
-  <%@user.books.each do |book|%>
+  <%current_user.books.each do |book|%>
     <li><%=book.title%> - <%=book.author%></li>
   <%end%>
 </ol>
