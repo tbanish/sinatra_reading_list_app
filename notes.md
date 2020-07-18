@@ -25,7 +25,7 @@ Sprint 3
 - [x] build get/post new action
 - [x] build new form erb
 - [x] build get book show action
-- [ ] build book show erb
+- [x] build book show erb
 - [ ] build book patch action
 - [ ] build book edit form erb
 - [ ] build book delete action
