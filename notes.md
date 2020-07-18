@@ -32,3 +32,7 @@ Sprint 3
 - [x] build book delete action
 - [x] build book delete form
 - [x] build /books to view reading list
+
+Sprint 4
+- [ ] add flash messages
+- [ ] finish erb layout for each page (decide each pages content)
