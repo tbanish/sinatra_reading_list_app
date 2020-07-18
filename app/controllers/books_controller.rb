@@ -28,7 +28,7 @@ class BooksController < ApplicationController
   get '/books/:id' do
     @book = Book.find_by(id: params[:id])
 
-    if @book == nil
+    if @book == nil || !current_user.book_ids.include?(@book.id)
       redirect to "/users"
     elsif logged_in? && current_user.book_ids.include?(@book.id)
       erb :"/books/show"
