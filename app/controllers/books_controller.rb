@@ -74,6 +74,7 @@ class BooksController < ApplicationController
   delete '/books/:id' do
     @book = Book.find_by(id: params[:id])
     @book.delete
+    flash[:notice] = "Successfully deleted book."
     redirect "/books"
   end
 end
