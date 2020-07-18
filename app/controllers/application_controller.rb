@@ -30,6 +30,7 @@ class ApplicationController < Sinatra::Base
     elsif params[:username] != "" && params[:email] != "" && params[:password] != ""
       @user = User.create(params)
       session[:id] = @user.id
+      flash[:notice] = "Successfully Signed Up."
       redirect to "/users"
     else
       flash[:notice] = "Please make sure all fields are filled out."
