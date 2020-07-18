@@ -24,11 +24,15 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/users' do
-    if !User.find_by(username: params[:username]) && params[:username] != "" && params[:email] != "" && params[:password] != ""
+    if User.find_by(username: params[:username])
+      flash[:notice] = "This username has already been taken."
+      redirect to "/signup"
+    elsif params[:username] != "" && params[:email] != "" && params[:password] != ""
       @user = User.create(params)
       session[:id] = @user.id
       redirect to "/users"
     else
+      flash[:notice] = "Please make sure all fields are filled out."
       redirect to "/signup"
     end
   end
