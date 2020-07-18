@@ -34,6 +34,6 @@ Sprint 3
 - [x] build /books to view reading list
 
 Sprint 4
-- [ ] add flash messages
+- [x] add flash messages
 - [x] finish erb layout for each page (decide each pages content)
 - [x] create layout erb
