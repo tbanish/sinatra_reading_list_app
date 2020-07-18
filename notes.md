@@ -9,11 +9,11 @@ Sprint 1
 Sprint 2
 - [x] set up application controller
 - [x] build get login route
-- [ ] build post login route
+- [x] build post login route
 - [x] create login.erb file
 - [x] build get sign up route
 - [x] build post users route
 - [x] create signup.erb file
 - [x] build get logout route
-- [ ] build post logout route
+- [x] build post logout route
 - [x] build logout.erb file
