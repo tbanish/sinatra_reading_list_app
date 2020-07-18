@@ -61,6 +61,7 @@ class ApplicationController < Sinatra::Base
     if logged_in?
       erb :logout
     else
+      flash[:notice] = "You are not logged in."
       redirect to "/login"
     end
   end
