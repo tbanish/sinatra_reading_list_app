@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
   get '/users' do
-    erb :index
+    erb :"/users/index"
   end
 end
