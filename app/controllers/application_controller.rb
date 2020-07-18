@@ -41,6 +41,7 @@ class ApplicationController < Sinatra::Base
     if !logged_in?
       erb :login
     else
+      flash[:notice] = "You are already logged in."
       redirect to "/users"
     end
   end
