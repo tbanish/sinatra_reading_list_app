@@ -34,18 +34,22 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  helpers do
+  get '/logout' do
+    erb :logout
+  end
 
+  post '/logout' do
+    session.clear
+    redirect to "/login"
+  end
+
+  helpers do
     def logged_in?
       !!current_user
     end
 
     def current_user
-      @current_user ||= User.find_by(session[:id])
+      @current_user ||= User.find_by(id: session[:id])
     end
-
-
   end
-
-
 end
