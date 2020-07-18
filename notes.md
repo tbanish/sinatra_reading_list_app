@@ -12,8 +12,8 @@ Sprint 2
 - [ ] build post login route
 - [ ] create login.erb file
 - [x] build get sign up route
-- [ ] build post users route
-- [ ] create signup.erb file
+- [x] build post users route
+- [x] create signup.erb file
 - [x] build get logout route
 - [ ] build post logout route
 - [ ] build logout.erb file
