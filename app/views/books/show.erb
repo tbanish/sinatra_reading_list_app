@@ -1,6 +1,7 @@
-<h1>Your Book</h1>
+<h1><%=@book.title%></h1>
+<p>By: <%=@book.author%></p>
 
-<p><%=@book.title%></p>
-<p><%=@book.author%></p>
-
-<a href="/books/<%=@book.id%>/edit">Edit your book</a>
+<ul>
+  <li><a href="/books/<%=@book.id%>/edit">Edit your book</a></li>
+  <li><a href="/books">View Reading List</a></li>
+</ul>
