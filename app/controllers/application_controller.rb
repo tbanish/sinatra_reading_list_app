@@ -1,7 +1,11 @@
+require 'sinatra/base'
+require 'rack-flash'
+
 class ApplicationController < Sinatra::Base
   configure do
     set :views, "app/views"
     set :public_dir, "public"
+    use Rack::Flash
     enable :sessions
     set :session_secret, 'secret'
   end
@@ -14,6 +18,7 @@ class ApplicationController < Sinatra::Base
     if !logged_in?
       erb :signup
     else
+      flash[:notice] = "You are already signed up."
       redirect to "/users"
     end
   end
