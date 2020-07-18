@@ -26,8 +26,9 @@ Sprint 3
 - [x] build new form erb
 - [x] build get book show action
 - [x] build book show erb
-- [ ] build book patch action
-- [ ] build book edit form erb
+- [x] build get book edit action
+- [x] build book patch action
+- [x] build book edit form erb
 - [ ] build book delete action
 - [ ] build book delete form
 - [ ] build /books to view reading list
