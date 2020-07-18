@@ -36,3 +36,4 @@ Sprint 3
 Sprint 4
 - [ ] add flash messages
 - [ ] finish erb layout for each page (decide each pages content)
+- [ ] create layout erb
