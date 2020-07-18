@@ -5,7 +5,7 @@ if ActiveRecord::Base.connection.migration_context.needs_migration?
 end
 
 
-# use Rack::MethodOverride
-# use UsersController
-# use BooksController
+use Rack::MethodOverride
+use UsersController
+use BooksController
 run ApplicationController
