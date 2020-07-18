@@ -19,7 +19,7 @@ Sprint 2
 - [x] build logout.erb file
 
 Sprint 3
-- [ ] work on CRUD actions for books
+- [x] work on CRUD actions for books
 - [x] build get books route
 - [x] build books index erb
 - [x] build get/post new action
@@ -29,6 +29,6 @@ Sprint 3
 - [x] build get book edit action
 - [x] build book patch action
 - [x] build book edit form erb
-- [ ] build book delete action
-- [ ] build book delete form
-- [ ] build /books to view reading list
+- [x] build book delete action
+- [x] build book delete form
+- [x] build /books to view reading list
