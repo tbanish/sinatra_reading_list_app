@@ -20,6 +20,7 @@ class BooksController < ApplicationController
   post '/books' do
     if params[:title] != "" && params[:author] != ""
       @book = Book.create(title: params[:title], author: params[:author], user_id: current_user.id)
+      flash[:notice] = "Successfully create the book #{@book.title}"
       redirect to "/books"
     else
       flash[:notice] = "Please make sure all fields are filled out."
