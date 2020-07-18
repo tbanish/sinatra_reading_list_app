@@ -7,13 +7,13 @@ Sprint 1
 - [x] seed data and play with models
 
 Sprint 2
-- [ ] set up application controller
-- [ ] build get login route
+- [x] set up application controller
+- [x] build get login route
 - [ ] build post login route
 - [ ] create login.erb file
-- [ ] build get sign up route
+- [x] build get sign up route
 - [ ] build post users route
 - [ ] create signup.erb file
-- [ ] build get logout route
+- [x] build get logout route
 - [ ] build post logout route
 - [ ] build logout.erb file
