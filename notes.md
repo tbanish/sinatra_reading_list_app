@@ -20,12 +20,14 @@ Sprint 2
 
 Sprint 3
 - [ ] work on CRUD actions for books
-- [ ] build new action
-- [ ] build new form erb
-- [ ] build show action
-- [ ] build show erb
-- [ ] build patch action
-- [ ] build edit form erb
-- [ ] build delete action
-- [ ] build delete form
-- [ ] build users show page to view reading list
+- [x] build get books route
+- [x] build books index erb
+- [x] build get/post new action
+- [x] build new form erb
+- [ ] build book show action
+- [ ] build book show erb
+- [ ] build book patch action
+- [ ] build book edit form erb
+- [ ] build book delete action
+- [ ] build book delete form
+- [ ] build /books to view reading list
