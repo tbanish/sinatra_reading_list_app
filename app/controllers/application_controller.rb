@@ -11,6 +11,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/users' do
+    if User.find_by(username: params[:username])
+      redirect to "/signup"
+    else
+      @user = User.create(params)
+      session[:id] = @user.id
+      redirect to "/users"
+    end
   end
 
   get '/login' do
