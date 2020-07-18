@@ -17,3 +17,15 @@ Sprint 2
 - [x] build get logout route
 - [x] build post logout route
 - [x] build logout.erb file
+
+Sprint 3
+- [ ] work on CRUD actions for books
+- [ ] build new action
+- [ ] build new form erb
+- [ ] build show action
+- [ ] build show erb
+- [ ] build patch action
+- [ ] build edit form erb
+- [ ] build delete action
+- [ ] build delete form
+- [ ] build users show page to view reading list
