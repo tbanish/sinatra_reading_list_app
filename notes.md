@@ -10,10 +10,10 @@ Sprint 2
 - [x] set up application controller
 - [x] build get login route
 - [ ] build post login route
-- [ ] create login.erb file
+- [x] create login.erb file
 - [x] build get sign up route
 - [x] build post users route
 - [x] create signup.erb file
 - [x] build get logout route
 - [ ] build post logout route
-- [ ] build logout.erb file
+- [x] build logout.erb file
