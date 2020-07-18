@@ -63,6 +63,7 @@ class BooksController < ApplicationController
       @book.title = params[:title]
       @book.author = params[:author]
       @book.save
+      flash[:notice] = "Successfully made changes to #{@book.title}"
       redirect to "/books/#{@book.id}"
     else
       flash[:notice] = "Please make sure all fields are filled out."
