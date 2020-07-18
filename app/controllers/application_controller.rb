@@ -39,7 +39,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/logout' do
-    erb :logout
+    if logged_in?
+      erb :logout
+    else
+      redirect to "/login"
+    end
   end
 
   post '/logout' do
