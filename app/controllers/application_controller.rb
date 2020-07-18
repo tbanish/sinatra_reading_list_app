@@ -52,6 +52,7 @@ class ApplicationController < Sinatra::Base
       session[:id] = @user.id
       redirect "/users"
     else
+      flash[:notice] = "The username and password you entered do not match our records."
       redirect "/login"
     end
   end
