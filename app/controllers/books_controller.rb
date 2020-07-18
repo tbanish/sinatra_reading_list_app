@@ -39,7 +39,7 @@ class BooksController < ApplicationController
 
   get '/books/:id/edit' do
     @book = Book.find_by(id: params[:id])
-    
+
     if @book == nil
       redirect to "/users"
     elsif logged_in? && current_user.book_ids.include?(@book.id)
