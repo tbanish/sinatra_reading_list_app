@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   get '/users' do
-    erb :"/users/index"
+    if logged_in?
+      erb :"/users/index"
+    else
+      redirect to "/login"
+    end
   end
 end
