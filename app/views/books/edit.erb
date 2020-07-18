@@ -1,0 +1,8 @@
+<h1>Edit Page</h1>
+
+<form action="/books/<%=@book.id%>" method="post">
+  <label for="title">Edit Title: </label>
+  <input type="text" name="title" value="@book.title">
+  <label for="Edit Author">Edit Author: </label>
+  <input type="text" name="author" value="@book.author">
+</form>
