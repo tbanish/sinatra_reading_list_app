@@ -6,6 +6,10 @@ class ApplicationController < Sinatra::Base
     set :session_secret, 'secret'
   end
 
+  get '/' do
+    erb :index
+  end
+
   get '/signup' do
     if !logged_in?
       erb :signup
