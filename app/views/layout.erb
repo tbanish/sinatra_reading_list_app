@@ -14,6 +14,9 @@
     <a href="/logout">Logout</a>
     <a href="/signup">Signup</a>
   </nav>
+  <div class="notice">
+    <p><%=flash[:notice] if flash.has?(:notice)%></p>
+  </div>
   <%= yield %>
 
 </body>
